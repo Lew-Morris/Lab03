@@ -2,11 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 int N = 99999;
-int mat[99999][99999];
 
-void main()
-
-{
+int main() {
+	int mat[99999][99999];
 	int i, j;
 	clock_t _S, _E;
 	double d = 0.0;
@@ -28,5 +26,6 @@ void main()
 	_E = clock();
 	d = (double)(_E - _S) / CLOCKS_PER_SEC;
 	printf("column major run time is %lf milliseconds\n", 1000 * d);
+	return 0;
 }
 
